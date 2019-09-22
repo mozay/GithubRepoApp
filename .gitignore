@@ -1,6 +1,6 @@
-# Created by https://www.gitignore.io/api/android
-
-### Android ###
+# Built application files
+*.apk
+*.ap_
 
 # Files for the ART/Dalvik VM
 *.dex
@@ -32,24 +32,34 @@ proguard/
 # Android Studio captures folder
 captures/
 
-# Intellij
+# IntelliJ
 *.iml
 .idea/workspace.xml
+.idea/tasks.xml
+.idea/gradle.xml
+.idea/assetWizardSettings.xml
+.idea/dictionaries
+.idea/libraries
+.idea/caches
 
 # Keystore files
-*.jks
+# Uncomment the following line if you do not want to check your keystore files in.
+#*.jks
 
-### Android Patch ###
-gen-external-apklibs
-But I don't know were to copy this, and where to put that in my Android project. Could someone help me?
+# External native build folder generated in Android Studio 2.2 and later
+.externalNativeBuild
 
-I copied this file into my gitIgnore file in Android Studio, but when I have pushed that project on gitHub my gitnigore file looks like this:
+# Google Services (e.g. APIs or Firebase)
+google-services.json
 
-*.iml
-.gradle
-/local.properties
-/.idea/workspace.xml
-/.idea/libraries
-.DS_Store
-/build
-/captures
+# Freeline
+freeline.py
+freeline/
+freeline_project_description.json
+
+# fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+fastlane/readme.md
