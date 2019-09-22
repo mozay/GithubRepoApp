@@ -1,0 +1,1 @@
+/Users/mehmet/Desktop/GithubRepoApp/buildSrc/build/classes/kotlin/main/Dependencies.class:/Users/mehmet/Desktop/GithubRepoApp/buildSrc/build/classes/kotlin/main/Versions.class

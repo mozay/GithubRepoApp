@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">GithubRepoApp</string>
+
+    <string name="username">Username</string>
+    <string name="submit">Submit</string>
+
+    <string name="enter_username">Please enter username!</string>
+    <string name="opps">Opps!</string>
+
+    <string name="stars">Stars :</string>
+    <string name="issues">Open Issues :</string>
+    <string name="fork">Forked :</string>
+
+    <string name="addfav">Repo add favourites!</string>
+    <string name="deletefav">Repo removed!</string>
+
+    <string name="network_error">Please check internet connection!</string>
+</resources>

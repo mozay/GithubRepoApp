@@ -1,0 +1,70 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion Versions.compileSdk
+    defaultConfig {
+        applicationId "com.mozay.githubrepoapp"
+        minSdkVersion Versions.minSdk
+        targetSdkVersion Versions.targetSdk
+        versionCode Versions.versionCode
+        versionName Versions.versionName
+        multiDexEnabled true
+    }
+    kapt {
+        correctErrorTypes = true
+    }
+    dataBinding {
+        enabled = true
+    }
+    androidExtensions {
+        experimental = true
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    sourceSets {
+        androidTest.java.srcDirs += "src/test-common/java"
+        test.java.srcDirs += "src/test-common/java"
+    }
+}
+
+dependencies {
+    implementation Dependencies.support_appcompat
+    implementation Dependencies.support_design
+    implementation Dependencies.support_cardview
+    implementation Dependencies.support_recyclerview
+    implementation Dependencies.support_constraintlayout
+
+    implementation Dependencies.kotlin_stdlib
+    implementation Dependencies.anko
+
+    implementation Dependencies.dagger
+    kapt Dependencies.dagger_compiler
+
+    implementation Dependencies.dagger_android
+    implementation Dependencies.dagger_android_support
+    kapt Dependencies.dagger_android_compiler
+
+    implementation Dependencies.rxjava
+    implementation Dependencies.rxandroid
+
+    implementation Dependencies.gson
+
+    implementation Dependencies.retrofit
+    implementation Dependencies.retrofit_gson
+    implementation Dependencies.retrofitAdapter
+
+    implementation Dependencies.glide
+    kapt Dependencies.glide_compiler
+
+    implementation Dependencies.multiDex
+
+}
+
+kapt {
+    generateStubs = true
+}
