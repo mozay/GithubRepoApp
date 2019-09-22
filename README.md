@@ -6,5 +6,6 @@ A demo project based on MVP architecture.
 * Dagger2
 * RxJava
 * Retrofit
+* Glide
 * MVP Clean Architecure
 * Kotlin DSL
